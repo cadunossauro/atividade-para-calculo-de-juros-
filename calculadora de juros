@@ -1,0 +1,47 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Fernando Silva Maransatto
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 06/02/2021
+Var
+   // Seção de Declarações das variáveis
+
+   valor, valor_inicial, valor_deposito, taxa : real
+   periodo, j: inteiro
+   continua: logico
+   sim_e_nao: caracter
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   periodo <- 12
+   continua <- verdadeiro
+
+   escreval("Digite o valor de inicio:")
+   leia(valor_inicial)
+   escreval("Digite a o valor de depósito mensal:")
+   leia(valor_deposito)
+   escreval("digite a taxa a ser aplicada:")
+   leia(taxa)
+
+   valor<- valor_inicial
+
+   enquanto continua = verdadeiro faca
+
+      para j de 1 ate periodo faca
+         valor<- valor + valor*taxa + valor_deposito
+         escreval(j,"  ",valor:10:2)
+      fimpara
+      escreval("deseja simular mais um ano")
+      leia(sim_e_nao)
+
+      se sim_e_nao = "n"   entao
+         continua <- falso
+
+      fimse
+   fimenquanto
+
+
+
+
+
+Fimalgoritmo
